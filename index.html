@@ -157,12 +157,19 @@
       align-items: center;
       justify-content: center;
       padding: 16px;
+      overflow: hidden;
     }
 
     .gallery-main img {
       max-width: 100%;
       max-height: 100%;
       object-fit: contain;
+      transition: transform 0.3s ease;
+      cursor: zoom-in;
+    }
+
+    .gallery-main:hover img {
+      transform: scale(1.18);
     }
 
     .thumbs-row {
@@ -330,20 +337,6 @@
       font-weight: 800;
     }
 
-    .floating-wa {
-      position: fixed;
-      bottom: 18px;
-      right: 18px;
-      z-index: 50;
-      background: var(--wa-green);
-      color: #fff;
-      border-radius: 999px;
-      padding: 11px 16px;
-      font-weight: 800;
-      font-size: 0.88rem;
-      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.35);
-    }
-
     footer {
       text-align: center;
       color: var(--muted);
@@ -355,7 +348,7 @@
 <body>
   <header>
     <div class="container header-inner">
-      <a class="brand" href="index.html">
+      <a class="brand" href="https://elsheikh-systems-eg.workers.dev/" target="_blank" rel="noopener noreferrer">
         <img src="levana-d01i-1.webp" alt="الشيخ للأنظمة الأمنية والحلول الذكية" onerror="this.style.display='none'" />
         <div>
           <div class="brand-title">الشيخ للأنظمة الأمنية والحلول الذكية</div>
@@ -397,14 +390,11 @@
 
         <div class="price-box">
           <div class="price-now" id="displayPrice">6,900 ج.م</div>
-          <div class="shipping-note">شحن ثابت 100 ج.م لجميع محافظات مصر • الدفع عند الاستلام، فودافون كاش، أو إنستا باي</div>
+          <div class="shipping-note">سعر الشحن الثابت 100 جنيه مصري • الدفع عند الاستلام، فودافون كاش، أو إنستا باي</div>
         </div>
 
         <div class="action-stack">
           <button id="addToCartBtn" type="button" class="btn btn-accent">تأكيد إضافة القفل للسلة والانتقال للطلب</button>
-          <a id="directWaBtn" href="https://wa.me/201012033762?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%82%D9%81%D9%84%20%D9%84%D9%8A%D9%81%D8%A7%D9%86%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20D01i" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
-            استفسار أو طلب مباشر عبر واتساب
-          </a>
         </div>
       </div>
     </section>
@@ -481,7 +471,7 @@
 
         <div class="summary-bar">
           <span>سعر الوحدة: <strong id="unitPriceText">6,900 ج.م</strong></span>
-          <span>الشحن الثابت (مصر): <strong>100 ج.م</strong></span>
+          <span>سعر الشحن ثابت 100 جنيه مصري: <strong>100 ج.م</strong></span>
           <span>الإجمالي النهائي: <strong id="totalPriceText">7,000 ج.م</strong></span>
         </div>
 
@@ -491,15 +481,6 @@
       </form>
     </section>
   </main>
-
-  <a
-    class="floating-wa"
-    href="https://wa.me/201012033762?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%82%D9%81%D9%84%20%D9%84%D9%8A%D9%81%D8%A7%D9%86%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20D01i"
-    target="_blank"
-    rel="noopener noreferrer"
-  >
-    واتساب: قفل ليفان D01i
-  </a>
 
   <footer>
     جميع الحقوق محفوظة © الشيخ للأنظمة الأمنية والحلول الذكية • مصر
@@ -620,7 +601,7 @@
           `الموديل: D01i`,
           `الكمية: ${qty}`,
           `سعر الوحدة: ${formatEGP(LOCK_PRICE)}`,
-          `الشحن الثابت (مصر): ${formatEGP(SHIPPING_FEE)}`,
+          `سعر الشحن ثابت 100 جنيه مصري: ${formatEGP(SHIPPING_FEE)}`,
           `الإجمالي: ${formatEGP(total)}`,
           `الاسم: ${name}`,
           `الموبايل/واتساب: ${phone}`,
