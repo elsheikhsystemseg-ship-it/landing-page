@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>قفل ليفان الذكي D01i | الشيخ للأنظمة الأمنية والحلول الذكية</title>
+
+  <!-- Google Analytics 4 (G-PMT7CG9FER) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PMT7CG9FER"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PMT7CG9FER');
+  </script>
+
+  <!-- Meta Pixel (2593953414436192) -->
+  <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2593953414436192');
+    fbq('track', 'PageView');
+  </script>
+  <noscript>
+    <img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=2593953414436192&ev=PageView&noscript=1" />
+  </noscript>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --primary: #0f294a;
+      --primary-dark: #09192e;
+      --accent: #d97706;
+      --accent-hover: #b45309;
+      --bg: #f3f5f8;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+      --border: #e2e8f0;
+      --success: #15803d;
+      --wa-green: #25d366;
+      --wa-green-dark: #1ebe5d;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      padding-bottom: 40px;
+    }
+
+    a { text-decoration: none; color: inherit; }
+
+    .container {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 0 16px;
+    }
+
+    header {
+      background: var(--primary-dark);
+      color: #fff;
+      position: sticky;
+      top: 0;
+      z-index: 40;
+      box-shadow: 0 3px 14px rgba(0, 0, 0, 0.16);
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 12px 0;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .brand img {
+      width: 44px;
+      height: 44px;
+      object-fit: contain;
+      background: #fff;
+      border-radius: 10px;
+      padding: 3px;
+    }
+
+    .brand-title {
+      font-size: 1rem;
+      font-weight: 900;
+      line-height: 1.2;
+    }
+
+    .brand-sub {
+      font-size: 0.78rem;
+      color: #cbd5e1;
+    }
+
+    .btn {
+      border: none;
+      border-radius: 10px;
+      padding: 10px 18px;
+      font-family: inherit;
+      font-weight: 800;
+      font-size: 0.9rem;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      transition: 0.2s ease;
+    }
+
+    .btn-accent { background: var(--accent); color: #fff; }
+    .btn-accent:hover { background: var(--accent-hover); }
+
+    .btn-wa { background: var(--wa-green); color: #fff; }
+    .btn-wa:hover { background: var(--wa-green-dark); }
+
+    .hero-product {
+      margin: 20px 0;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      padding: 22px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      align-items: start;
+      box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+    }
+
+    .gallery-main {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      height: 360px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .gallery-main img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .thumbs-row {
+      display: flex;
+      gap: 10px;
+      margin-top: 12px;
+      flex-wrap: wrap;
+    }
+
+    .thumb-btn {
+      width: 74px;
+      height: 74px;
+      border-radius: 10px;
+      border: 2px solid var(--border);
+      background: #f8fafc;
+      padding: 6px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .thumb-btn.active { border-color: var(--accent); }
+
+    .thumb-btn img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain;
+    }
+
+    .badge {
+      display: inline-block;
+      background: #fef3c7;
+      color: #92400e;
+      font-size: 0.8rem;
+      font-weight: 800;
+      padding: 4px 12px;
+      border-radius: 999px;
+      margin-bottom: 8px;
+    }
+
+    .product-h1 {
+      font-size: 1.5rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      margin-bottom: 8px;
+    }
+
+    .product-lead {
+      color: var(--muted);
+      font-size: 0.95rem;
+      margin-bottom: 14px;
+    }
+
+    .price-box {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      margin-bottom: 16px;
+    }
+
+    .price-now {
+      font-size: 1.55rem;
+      font-weight: 900;
+      color: var(--success);
+    }
+
+    .shipping-note {
+      font-size: 0.85rem;
+      color: var(--muted);
+      margin-top: 4px;
+    }
+
+    .action-stack {
+      display: grid;
+      gap: 10px;
+      margin-bottom: 14px;
+    }
+
+    .specs-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      margin-bottom: 22px;
+    }
+
+    .section-title {
+      font-size: 1.15rem;
+      font-weight: 900;
+      color: var(--primary-dark);
+      border-right: 4px solid var(--accent);
+      padding-right: 10px;
+      margin-bottom: 14px;
+    }
+
+    .specs-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 12px;
+    }
+
+    .spec-item {
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 12px 14px;
+    }
+
+    .spec-label {
+      font-size: 0.8rem;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .spec-val {
+      font-size: 0.95rem;
+      font-weight: 800;
+      color: var(--primary-dark);
+      margin-top: 2px;
+    }
+
+    .order-section {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 22px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 14px;
+    }
+
+    .field label {
+      display: block;
+      font-size: 0.85rem;
+      font-weight: 800;
+      margin-bottom: 5px;
+    }
+
+    .field input,
+    .field select {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border);
+      font-family: inherit;
+      font-size: 0.92rem;
+    }
+
+    .summary-bar {
+      margin-top: 16px;
+      background: #f8fafc;
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 14px;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 12px;
+      font-size: 0.95rem;
+      font-weight: 800;
+    }
+
+    .floating-wa {
+      position: fixed;
+      bottom: 18px;
+      right: 18px;
+      z-index: 50;
+      background: var(--wa-green);
+      color: #fff;
+      border-radius: 999px;
+      padding: 11px 16px;
+      font-weight: 800;
+      font-size: 0.88rem;
+      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.35);
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.85rem;
+      margin-top: 28px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container header-inner">
+      <a class="brand" href="index.php">
+        <img src="images/levana-d01i-1.webp" alt="الشيخ للأنظمة الأمنية والحلول الذكية" onerror="this.style.display='none'" />
+        <div>
+          <div class="brand-title">الشيخ للأنظمة الأمنية والحلول الذكية</div>
+          <div class="brand-sub">حلول ذكية وأنظمة أمان في مصر</div>
+        </div>
+      </a>
+      <a class="btn btn-accent" href="#orderFormSection">اطلب الآن</a>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero-product">
+      <div>
+        <div class="gallery-main">
+          <img id="mainProductImg" src="images/levana-d01i-1.webp" alt="قفل ليفان الذكي موديل D01i" onerror="this.style.display='none'" />
+        </div>
+        <div class="thumbs-row">
+          <button type="button" class="thumb-btn active" data-img="images/levana-d01i-1.webp" onclick="switchImage(this)">
+            <img src="images/levana-d01i-1.webp" alt="صورة 1 لقفل ليفان D01i" onerror="this.style.display='none'" />
+          </button>
+          <button type="button" class="thumb-btn" data-img="images/levana-d01i-2.webp" onclick="switchImage(this)">
+            <img src="images/levana-d01i-2.webp" alt="صورة 2 لقفل ليفان D01i" onerror="this.style.display='none'" />
+          </button>
+          <button type="button" class="thumb-btn" data-img="images/levana-d01i-3.webp" onclick="switchImage(this)">
+            <img src="images/levana-d01i-3.webp" alt="صورة 3 لقفل ليفان D01i" onerror="this.style.display='none'" />
+          </button>
+          <button type="button" class="thumb-btn" data-img="images/levana-d01i-4.webp" onclick="switchImage(this)">
+            <img src="images/levana-d01i-4.webp" alt="صورة 4 لقفل ليفان D01i" onerror="this.style.display='none'" />
+          </button>
+        </div>
+      </div>
+
+      <div>
+        <span class="badge">الأنظمة الأمنية والحلول الذكية • موديل D01i</span>
+        <h1 class="product-h1">قفل ليفان الذكي موديل D01i — أسود بطلاء بودرة</h1>
+        <p class="product-lead">
+          تحكم ذكي وآمن في أبوابك الخشبية والأمنية مع خمس طرق للفتح، سعة حتى 250 مستخدماً، تنبيهات فورية للأمان، ووسائل طوارئ متكاملة.
+        </p>
+
+        <div class="price-box">
+          <div class="price-now" id="displayPrice">6,900 ج.م</div>
+          <div class="shipping-note">شحن ثابت 100 ج.م لجميع محافظات مصر • الدفع عند الاستلام، فودافون كاش، أو إنستا باي</div>
+        </div>
+
+        <div class="action-stack">
+          <button id="addToCartBtn" type="button" class="btn btn-accent">تأكيد إضافة القفل للسلة والانتقال للطلب</button>
+          <a id="directWaBtn" href="https://wa.me/201012033762?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%82%D9%81%D9%84%20%D9%84%D9%8A%D9%81%D8%A7%D9%86%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20D01i" target="_blank" rel="noopener noreferrer" class="btn btn-wa">
+            استفسار أو طلب مباشر عبر واتساب
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs-section">
+      <h2 class="section-title">المواصفات الفنية لقفل ليفان D01i</h2>
+      <div class="specs-grid">
+        <div class="spec-item">
+          <div class="spec-label">الموديل</div>
+          <div class="spec-val">D01i</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">اللون والتشطيب</div>
+          <div class="spec-val">أسود أنيق بطلاء بودرة</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">طرق الفتح</div>
+          <div class="spec-val">بصمة، كلمة مرور، بطاقة RFID، تطبيق Tuya وSmart Life، مفتاح ميكانيكي</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">السعة التخزينية</div>
+          <div class="spec-val">حتى 250 مستخدماً</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">طاقة الطوارئ</div>
+          <div class="spec-val">منفذ طوارئ ومفتاح ميكانيكي</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">التنبيهات الذكية</div>
+          <div class="spec-val">العبث، انخفاض البطارية، والوصول غير المصرح به</div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-label">التوافق</div>
+          <div class="spec-val">أبواب خشبية وأمنية</div>
+        </div>
+      </div>
+    </section>
+
+    <section id="orderFormSection" class="order-section">
+      <h2 class="section-title">إتمام الطلب عبر واتساب</h2>
+      <form id="levanaOrderForm">
+        <div class="form-grid">
+          <div class="field">
+            <label for="orderQty">الكمية</label>
+            <select id="orderQty">
+              <option value="1" selected>1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="custName">الاسم بالكامل</label>
+            <input id="custName" type="text" required placeholder="أدخل اسمك بالكامل" />
+          </div>
+          <div class="field">
+            <label for="custPhone">رقم الموبايل / واتساب</label>
+            <input id="custPhone" type="tel" required placeholder="01xxxxxxxxx" />
+          </div>
+          <div class="field">
+            <label for="custAddress">المحافظة والعنوان التفصيلي في مصر</label>
+            <input id="custAddress" type="text" required placeholder="المحافظة - المدينة - الشارع" />
+          </div>
+          <div class="field">
+            <label for="custPayment">طريقة الدفع</label>
+            <select id="custPayment">
+              <option value="الدفع عند الاستلام" selected>الدفع عند الاستلام</option>
+              <option value="فودافون كاش">فودافون كاش</option>
+              <option value="إنستا باي">إنستا باي</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="summary-bar">
+          <span>سعر الوحدة: <strong id="unitPriceText">6,900 ج.م</strong></span>
+          <span>الشحن الثابت (مصر): <strong>100 ج.م</strong></span>
+          <span>الإجمالي النهائي: <strong id="totalPriceText">7,000 ج.م</strong></span>
+        </div>
+
+        <button type="submit" class="btn btn-wa" style="width:100%; margin-top:16px;">
+          إرسال طلب القفل عبر واتساب
+        </button>
+      </form>
+    </section>
+  </main>
+
+  <a
+    class="floating-wa"
+    href="https://wa.me/201012033762?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B3%D8%AA%D9%81%D8%B3%D8%A7%D8%B1%20%D8%B9%D9%86%20%D9%82%D9%81%D9%84%20%D9%84%D9%8A%D9%81%D8%A7%D9%86%20%D8%A7%D9%84%D8%B0%D9%83%D9%8A%20D01i"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    واتساب: قفل ليفان D01i
+  </a>
+
+  <footer>
+    جميع الحقوق محفوظة © الشيخ للأنظمة الأمنية والحلول الذكية • مصر
+  </footer>
+
+  <script>
+    const PRODUCT_ID = 'levana-smart-lock-d01i-black';
+    const PRODUCT_NAME = 'قفل ليفان الذكي موديل D01i (أسود بطلاء بودرة)';
+    const LOCK_PRICE = 6900;
+    const SHIPPING_FEE = 100;
+    const CURRENCY = 'EGP';
+    const WHATSAPP_NUMBER = '201012033762';
+
+    function formatEGP(amount) {
+      return `${Number(amount || 0).toLocaleString('ar-EG')} ج.م`;
+    }
+
+    function switchImage(btn) {
+      const src = btn.getAttribute('data-img');
+      const mainImg = document.getElementById('mainProductImg');
+      if (src && mainImg) {
+        mainImg.src = src;
+      }
+      document.querySelectorAll('.thumb-btn').forEach(el => el.classList.remove('active'));
+      btn.classList.add('active');
+    }
+
+    function updateTotals() {
+      const qty = Math.max(1, Number(document.getElementById('orderQty').value || 1));
+      const subtotal = LOCK_PRICE * qty;
+      const total = subtotal + SHIPPING_FEE;
+      document.getElementById('displayPrice').textContent = formatEGP(LOCK_PRICE);
+      document.getElementById('unitPriceText').textContent = formatEGP(LOCK_PRICE);
+      document.getElementById('totalPriceText').textContent = formatEGP(total);
+    }
+
+    function trackViewContent() {
+      if (typeof fbq === 'function') {
+        fbq('track', 'ViewContent', {
+          content_ids: [PRODUCT_ID],
+          content_name: PRODUCT_NAME,
+          content_type: 'product',
+          value: LOCK_PRICE,
+          currency: CURRENCY
+        });
+      }
+      if (typeof gtag === 'function') {
+        gtag('event', 'view_item', {
+          currency: CURRENCY,
+          value: LOCK_PRICE,
+          items: [{
+            item_id: PRODUCT_ID,
+            item_name: PRODUCT_NAME,
+            price: LOCK_PRICE,
+            quantity: 1
+          }]
+        });
+      }
+    }
+
+    function trackAddToCart(qty) {
+      const safeQty = Math.max(1, Number(qty || 1));
+      const eventValue = LOCK_PRICE * safeQty;
+      if (typeof fbq === 'function') {
+        fbq('track', 'AddToCart', {
+          content_ids: [PRODUCT_ID],
+          content_name: PRODUCT_NAME,
+          content_type: 'product',
+          value: eventValue,
+          currency: CURRENCY
+        });
+      }
+      if (typeof gtag === 'function') {
+        gtag('event', 'add_to_cart', {
+          currency: CURRENCY,
+          value: eventValue,
+          items: [{
+            item_id: PRODUCT_ID,
+            item_name: PRODUCT_NAME,
+            price: LOCK_PRICE,
+            quantity: safeQty
+          }]
+        });
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateTotals();
+      trackViewContent();
+
+      document.getElementById('orderQty').addEventListener('change', updateTotals);
+
+      document.getElementById('addToCartBtn').addEventListener('click', () => {
+        const qty = Math.max(1, Number(document.getElementById('orderQty').value || 1));
+        trackAddToCart(qty);
+        const orderSection = document.getElementById('orderFormSection');
+        if (orderSection) {
+          orderSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+
+      document.getElementById('levanaOrderForm').addEventListener('submit', (e) => {
+        e.preventDefault();
+        const qty = Math.max(1, Number(document.getElementById('orderQty').value || 1));
+        const name = document.getElementById('custName').value.trim();
+        const phone = document.getElementById('custPhone').value.trim();
+        const address = document.getElementById('custAddress').value.trim();
+        const payment = document.getElementById('custPayment').value;
+
+        trackAddToCart(qty);
+
+        const subtotal = LOCK_PRICE * qty;
+        const total = subtotal + SHIPPING_FEE;
+
+        const message = [
+          'طلب جديد - الشيخ للأنظمة الأمنية والحلول الذكية',
+          `المنتج: ${PRODUCT_NAME}`,
+          `الموديل: D01i`,
+          `الكمية: ${qty}`,
+          `سعر الوحدة: ${formatEGP(LOCK_PRICE)}`,
+          `الشحن الثابت (مصر): ${formatEGP(SHIPPING_FEE)}`,
+          `الإجمالي: ${formatEGP(total)}`,
+          `الاسم: ${name}`,
+          `الموبايل/واتساب: ${phone}`,
+          `العنوان: ${address}`,
+          `طريقة الدفع: ${payment}`
+        ].join('\n');
+
+        const waUrl = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+        window.open(waUrl, '_blank', 'noopener,noreferrer');
+      });
+    });
+  </script>
+</body>
+</html>
